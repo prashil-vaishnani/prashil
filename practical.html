@@ -1,4 +1,4 @@
-<DOCTYPT html>
+<DOCTYPE html>
     <head>
         <title>flipKart home page</title>
         <meta content="html css" author="prashil">
@@ -18,6 +18,33 @@
                 list-style-type: none;
                 padding: 2px;
             }
+            center {
+                 border: 1px  rgb(51, 50, 50);
+                 margin-top: 5px;
+            }
+              
+            div.gallery {
+              margin: 5px;
+              border: 1px solid #ccc;
+              float: left;
+              width: 180px;
+             }
+
+
+            div.gallery:hover {
+              border: 1px solid #777;
+            }
+
+            div.gallery img {
+              width: 100%;
+              height: auto;
+            }
+
+            div.desc {
+              padding: 10px;
+              text-align: center;
+            }
+
         </style>
 
     </head>
@@ -25,39 +52,92 @@
         <script>
             document.getElementsByTagNames(figure).classList.add("c");
         </script>
-        <nav class="navbar navbar-dark bg-primary"> 
-            <span style="margin-left:170px;"></span>    
-            <b style="font-style: italic;">flipkart </b><input placeholder="Search for product,brands and more                                             &#128269" size="50%">
-            <span style="margin-left:70px;"></span>
-            <div class="btn-group">
-                <button type="button" class="btn btn-info btn-primary">LOGIN</button>
-                <button type="button" class="btn btn-primary dropdown-toggle">more</button>                
-                <button type="button" class="btn btn-primary ">&#128722 cart</button>
-            </div>
-        
-        
+             <nav class="navbar navbar-dark bg-primary"> 
+                    <span style="margin-left:170px;"></span>    
+                          <b style="font-style: italic;">flipkart </b><input placeholder="Search for product,brands and more                                             &#128269" size="50%">
+                          <span style="margin-left:70px;"></span>
+                          <div class="btn-group">
+                              <button type="button" class="btn btn-info btn-primary">LOGIN</button>
+                              <select name="more" id="more" class="btn btn-primary dropdown-toggle">
+                                <option value="more" class="dropdown-item" selected>more</option>                                
+                                <option value="newproducts" class="dropdown-item">new</option>
+                                </select>          
+                              <button type="button" class="btn btn-primary btn-sm">&#128722 cart</button>
+                          </div> 
         </nav>
         <hr>
     <center>
-    <table>
-        <tr>               
-            <img class="c" float="right" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-            <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-            <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-            <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-            <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-            <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-            <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-            <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-        </tr>
-    </table>
+      
+      <div class="flex-container">
+        <div class="row text-center horizontal-scroll-wrapper squares">
+            <div class="col-md-1" margin="40px">
+                <figure>
+                 <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+                  <figcaption>Hdhsfgjgd</figcaption>
+                </figure>
+              </div>
+              <div class="col-md-1" margin="40px">
+                <figure>
+                 <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+                  <figcaption>Hdhsfgjgd</figcaption>
+                </figure>
+              </div>
+              <div class="col-md-1" margin="40px">
+                <figure>
+                 <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+                  <figcaption>Hdhsfgjgd</figcaption>
+                </figure>
+              </div>
+              <div class="col-md-1" margin="40px">
+                <figure>
+                 <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+                  <figcaption>Hdhsfgjgd</figcaption>
+                </figure>
+              </div>
+              <div class="col-md-1" margin="40px">
+                <figure>
+                 <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+                  <figcaption>Hdhsfgjgd</figcaption>
+                </figure>
+              </div>
+          <div class="col-md-1">
+            <figure>
+             <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+              <figcaption>Hdhsfgjgd</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-1">
+            <figure>
+             <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+              <figcaption>Hdhsfgjgd</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-1">
+            <figure>
+             <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+              <figcaption>Hdhsfgjgd</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-1">
+            <figure>
+             <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+              <figcaption>Hdhsfgjgd</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-1">
+            <figure>
+             <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
+              <figcaption>Hdhsfgjgd</figcaption>
+            </figure>
+          </div>
+    
     </center>
         <hr>
         <span class="border-top">
         <h2><pre><b>     Deal of the day</b></pre></h2>
         <hr>
         <center>
-            <div class="container">
+            <div class="flex-container">
                 <div class="row text-center">
                     <div class="col-md-1" margin="40px">
                         <figure>
@@ -137,21 +217,46 @@
        
         <hr>
         <h4><pre><b>     Book and music instuments</b></pre></h4>
-        <center>
-        <table>
-            <tr>               
-                <img class="c" float="right" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-                <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-                <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-                <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-                <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-                <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-                <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-                <img class="c" src="file:///home/prashil/Downloads/download.jpeg" width=100px alt="item1">
-            </tr>
-        </table>
-        </center>
-        </span>
-       
+      
+<!-- -------------------------------------------------------------------------  -->
+      <div class="gallery">
+          <a target="_blank" href="file:///home/prashil/Downloads/download.jpeg">
+          <img src="file:///home/prashil/Downloads/download.jpeg" alt=" picture" width="100px">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="file:///home/prashil/Downloads/download.jpeg">
+        <img src="file:///home/prashil/Downloads/download.jpeg" alt=" picture" width="100px">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="file:///home/prashil/Downloads/download.jpeg">
+        <img src="file:///home/prashil/Downloads/download.jpeg" alt=" picture" width="100px">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="file:///home/prashil/Downloads/download.jpeg">
+        <img src="file:///home/prashil/Downloads/download.jpeg" alt=" picture" width="100px">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="file:///home/prashil/Downloads/download.jpeg">
+        <img src="file:///home/prashil/Downloads/download.jpeg" alt=" picture" width="100px">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="file:///home/prashil/Downloads/download.jpeg">
+        <img src="file:///home/prashil/Downloads/download.jpeg" alt=" picture" width="100px">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+     
+
     </body>
 </html>
