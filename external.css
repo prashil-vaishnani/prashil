@@ -1,0 +1,47 @@
+.btn {
+    font-size:medium;
+    text-align: center;
+    margin-top: auto;
+    
+    
+}
+.c {
+    padding: 5px;
+    margin-right: 40px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.product-card {
+    display: flex;
+    flex-direction: column;
+  
+    padding: 2%;
+    flex:12.5%;
+  
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+  }
+.dropdown {
+  font-style: normal solid black;
+  border: none;
+  size: ;
+}
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  transform:rotate(-90deg) translateY(-100px);
+  transform-origin: right top;
+}
+.horizontal-scroll-wrapper>div {
+  width: 100px;
+  height: 100px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
