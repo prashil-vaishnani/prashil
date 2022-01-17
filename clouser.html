@@ -1,0 +1,47 @@
+<DOCTYPE html>
+
+    <body>
+        <button onclick="updateClickCount()">click me</button>
+        <div> you've clicked <span id="Count"> 0 </span> times!</div>
+
+        <script>
+            var updateClickCount = (function () {
+                var counter = 0;
+                return function () {        //ANONYMOUS FUNCTION CALL 
+                    ++counter;
+                    document.getElementById("Count").innerHTML = counter;
+                }
+            })();
+
+            /*--------------data hiding using clouser property-------------------------*/
+            var counter = (function () {
+                var privateCounter = 0;
+                function changeBy(val) {
+                    privateCounter += val;
+                }
+                return {
+                    increment: function () {
+                        changeBy(1);
+                    },
+                    decrement: function () {
+                        changeBy(-1);
+                    },
+                    value: function () {
+                        return privateCounter;
+                    }
+                };
+            })();
+
+            alert(counter.value()); // 0
+            counter.increment();
+            counter.increment();
+            alert(counter.value()); // 2
+            counter.decrement();
+            alert(counter.value()); // 1
+
+
+        </script>
+
+    </body>
+
+    </html>
